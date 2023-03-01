@@ -221,6 +221,8 @@ table
     position: relative;
     margin-top: 40px;
     width: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
 }
 
 a
@@ -246,6 +248,7 @@ a:active
 td
 {
 vertical-align: top;
+border: 1px solid rgba(0,0,0,0.4);
 }
 
 @media (max-width: 1000px)
