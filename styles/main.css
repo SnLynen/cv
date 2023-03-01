@@ -251,6 +251,17 @@ vertical-align: top;
 border: 1px solid rgba(0,0,0,0.4);
 }
 
+.leftTable
+{
+    text-align: left;
+}
+
+.rightTable
+{
+    
+    text-align: right;
+}
+
 @media (max-width: 1000px)
 {
     .container
