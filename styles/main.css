@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body
+{
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    box-shadow: 0 40px 75px rgba(0, 0, 0, 0.3);
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 20px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container .leftSide
+{
+    position: relative;
+    background: darkslategrey;
+    padding: 40px;
+}
+.container .rightSide
+{
+    position: relative;
+    background: white;
+    padding: 40px;
+}
+
+.profile
+{
+    position: relative;
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255,255,255,0.4); 
+}
+
+.profile .pFp
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 35%;
+    overflow: hidden;
+}
+
+.profile .pFp img
+{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    object-fit: cover;
+}
+
+.profile h2
+{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 15px;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.profile h2 span
+{
+    font-weight: 300;
+    font-size: 0.8em;
+
+}
+
+.contact
+{
+    padding-top: 40px;
+
+}
+
+.title
+{
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact ul
+{
+    position: relative;
+}
+
+.contact li
+{
+    position: relative;
+    margin: 10px 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.contact ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+.contact ul li .text
+{
+    color: white;
+    font-weight: 300;
+}
+
+.contact.education li
+{
+    margin-bottom: 15px;
+
+}
+
+.contact.education h5
+{
+    color: lightseagreen;
+    font-weight: 500;
+}
+
+.contact.education h4:nth-child(2)
+{
+    color: white;
+    font-weight: 500;
+}
+
+.contact.education h4
+{
+    color: white;
+    font-weight: 300;
+}
+
+.aboutme
+{
+    margin-bottom: 50px;
+}
+
+.aboutme:last-child
+{
+    margin-bottom: 0;
+}
+
+.titleRight
+{
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+p
+{
+ color: #333;
+}
+
+.aboutme.knowledge h5
+{
+    color: black;
+    font-weight: 500;
+}
+
+.aboutme.knowledge h4
+{
+    color: black;
+    font-weight: 300;
+}
+
+.knowledge ul
+{
+    position: relative;
+}
+
+.knowledge .titleRight
+{
+    margin-bottom: 20px;
+}
+
+.knowledge li
+{
+    position: relative;
+    margin-left: 40px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.knowledge.hardskills ul
+{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+table
+{
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+}
+
+a
+{
+    color: aqua;
+}
+
+a:visited
+{
+    color: aqua;
+}
+
+a:hover
+{
+    color:white;
+}
+
+a:active
+{
+    color: aquamarine;
+}
+
+@media (max-width: 1000px)
+{
+    .container
+    {
+        margin:10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .knowledge.hardskills ul
+    {
+        margin-left: 0;
+        
+    }
+}
