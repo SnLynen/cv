@@ -243,6 +243,11 @@ a:active
     color: aquamarine;
 }
 
+td
+{
+vertical-align: top;
+}
+
 @media (max-width: 1000px)
 {
     .container
